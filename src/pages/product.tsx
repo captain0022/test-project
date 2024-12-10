@@ -4,13 +4,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { FieldMeta, useForm } from "@tanstack/react-form";
+import { useForm } from "@tanstack/react-form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ZodValidator } from "@tanstack/zod-form-adapter";
-import { AppDispatch, RootState } from "@/store";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { RootState } from "@/store";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import { ProductSchemaType } from "@/types/product";
 
 export default function ProductDetailsPage() {

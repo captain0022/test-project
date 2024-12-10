@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -13,7 +12,7 @@ import { Label } from "@/components/ui/label";
 import { ZodValidator, zodValidator } from "@tanstack/zod-form-adapter";
 import { AppDispatch, RootState } from "@/store";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, updateProduct } from "@/store/slices/productSlice";
+import { updateProduct } from "@/store/slices/productSlice";
 import { useNavigate, useParams } from "react-router-dom";
 import { ProductSchema, ProductSchemaType } from "@/types/product";
 
